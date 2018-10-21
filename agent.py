@@ -1,21 +1,21 @@
-from gi.repository import GLib
 from pydbus import SystemBus
-
 import logging
 logging.basicConfig(level=logging.DEBUG)
 
 
-def ask(prompt):
-  return 111111
+def trust_device(path):
+  bus = SystemBus()
+  logging.info('trust_device(path=%s)' % (path))
+  dev = bus.get('org.bluez', path)['org.bluez.Device1']
+  dev.Trusted = True
 
-def set_trusted(path):
-    props = bus.get('org.bluez', path)['org.freedesktop.DBus.Properties']
-    print('trust', path)
-    props.Set("org.bluez.Device1", "Trusted", GLib.Variant.new_boolean(True))
+### Look into this one - not used, where did it come from?
+def connect_device(path):
+  bus = SystemBus()
+  logging.info('connect_device(path=%s)' % (path))
+  dev = bus.get('org.bluez', path)['org.bluez.Device1']
+  dev.Connect()
 
-def dev_connect(path):
-    dev = bus.get('org.bluez', path)['org.bluez.Device1']
-    dev.Connect()
 
 class Agent(object):
     '''
@@ -54,79 +54,44 @@ class Agent(object):
 	</interface>
 </node>
     '''
+
     def Release(self):
-        print("Release")
+      logging.info('Release()')
 
     def AuthorizeService(self, device, uuid):
-        print("AuthorizeService (%s, %s)" % (device, uuid))
-        authorize = ask("Authorize connection (yes/no): ")
-        if (authorize == "yes"):
-            return
+      logging.info('Agent:AuthorizeService(device=%s, uuid=%s): automatic yes' % (device, uuid))
+      return
 
     def RequestPinCode(self, device):
-        print("RequestPinCode (%s)" % (device))
-        set_trusted(device)
-        return ask("Enter PIN Code: ")
+      logging.info('Agent:RequestPinCode(device=%s) -> 111111' % (device))
+      trust_device(device)
+      return 111111
 
     def RequestPasskey(self, device):
-        print("RequestPasskey (%s)" % (device))
-        set_trusted(device)
-        passkey = ask("Enter passkey: ")
-        return int(passkey)
+      """Callback for KeyboardOnly/xxx; returning a 6-digit passkey to the device"""
+      trust_device(device)
+      logging.info('Agent:RequestPasskey(device=%s) -> 111111' % (device))
+      return 111111
 
     def DisplayPasskey(self, device, passkey, entered):
-        print("DisplayPasskey (%s, %06u entered %u)" %
-              (device, passkey, entered))
+      logging.info('Agent:DisplayPasskey(device=%s, passkey=%s, entered=%s)' % (device, passkey, entered))
+      print("DisplayPasskey (%s, %06u entered %u)" % (device, passkey, entered))
 
     def DisplayPinCode(self, device, pincode):
-        print("DisplayPinCode (%s, %s)" % (device, pincode))
+      logging.info('Agent:DisplayPinCode(device=%s, pincode=%s)' % (device, pindcode))
+      print("DisplayPinCode (%s, %s)" % (device, pincode))
 
     def RequestConfirmation(self, device, passkey):
-        print("RequestConfirmation (%s, %06d)" % (device, passkey))
-        set_trusted(device)
-        print("here")
-        return True
-#        confirm = ask("Confirm passkey ([y]/n): ")
+      """Callback for DisplayYesNo/DisplayOnly/KeyboardDisplay; device sent a 6-digit passkey, and we just confirm"""
+      logging.info('Agent:RequestConfirmation(device=%s, passkey=%s)' % (device, passkey))
+      trust_device(device)
+      return
 
     def RequestAuthorization(self, device):
-        print("RequestAuthorization (%s)" % (device))
-        auth = ask("Authorize? ([y]/n): ")
+      logging.info('Agent:RequestAuthorization(device=%s)' % (device, passkey))
+      print("RequestAuthorization (%s)" % (device))
+      authorize = input("Authorize? (yes/no): ")
+      return
 
     def Cancel(self):
-        print("Cancel")
-
-def all_adapters():
-  bus = SystemBus()
-  bluez = bus.get("org.bluez", "/")
-  adapters = { k: v['org.bluez.Adapter1'] for k, v in bluez.GetManagedObjects().items() if 'org.bluez.Adapter1' in v}
-  logging.info('all_adapters() -> %s' % list(adapters.keys()))
-  return adapters
-
-def configure_adapter(obj_path):
-    props = bus.get('org.bluez', obj_path)['org.freedesktop.DBus.Properties']
-    props.Set("org.bluez.Adapter1", "Powered", GLib.Variant.new_boolean(True))
-    props.Set("org.bluez.Adapter1", "Discoverable", GLib.Variant.new_boolean(True))
-    logging.info('configure_adapter(obj_path=%s) Powered=True Discoverable=True' % (obj_path))
-
-def register_agent():
-    capability = "DisplayYesNo"
-    path = "/net/lvht/btk/agent"
-    # agent = Agent(bus.con, path)
-    bus.register_object(path, Agent(), node_info=None)
-    manager = bus.get('org.bluez')['.AgentManager1']
-    manager.RegisterAgent(path, capability)
-    manager.RequestDefaultAgent(path)
-
-
-
-if __name__ == '__main__':
-
-    bus = SystemBus()
-
-    [configure_adapter(a) for a in all_adapters().keys()]
-
-    register_agent()
-
-    mainloop = GLib.MainLoop()
-
-    mainloop.run()
+      logging.info('Agent:Cancel()')
