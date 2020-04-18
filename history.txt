@@ -1,0 +1,1000 @@
+  331  sudo systemct restart ofono.service
+  332  sudo systemctl restart ofono.service
+  333  journalctl 
+  334  ./dial-number /hfp/org/bluez/hci0/dev_94_65_2D_84_61_99 "+61459868975"
+  335  journalctl 
+  336  sudo vi /etc/dbus-1/system.d/ofono.conf
+  337  sudo -s
+  338  ./dial-number /hfp/org/bluez/hci0/dev_94_65_2D_84_61_99 "+61459868975"
+  339  journalctl 
+  340  ./dial-number /hfp/org/bluez/hci0/dev_94_65_2D_84_61_99 "+61459868975"
+  341  ./enable-modem 
+  342  journalctl 
+  343  pulseaudio --version
+  344  sudo /etc/pulse/default.pa
+  345  sudo vi /etc/pulse/default.pa
+  346  sudo pulseaudio --start &
+  347  pulseaudio --start &
+  348  fg
+  349  pulseaudio --start
+  350  tail /var/log/messages 
+  351  pulseaudio --start
+  352  pulseaudio --help
+  353  pulseaudio --check
+  354  echo $?
+  355  ps -elf | grep pulse
+  356  echo $?
+  357  jkobs
+  358  bjos
+  359  ./dial-number /hfp/org/bluez/hci0/dev_94_65_2D_84_61_99 "+61459868975"
+  360  sudo apt-get install pulseaudio pulseaudio-module-bluetooth -y
+  361  sudo apt-get purge bluealsa -y
+  362  ./dial-number /hfp/org/bluez/hci0/dev_94_65_2D_84_61_99 "+61459868975"
+  363  journalctl 
+  364  passwd 
+  365  sudo -s
+  366  sudo -s
+  367  sudo bluetoothctl 
+  368  sudo systemctl restart bluetooth.service
+  369  sudo bluetoothctl 
+  370  sudo reboot
+  371  screen -R
+  372  sudo apt-get install screen
+  373  screen -R
+  374  ld
+  375  cd ofono-1.24/
+  376  ]cd te
+  377  cd test
+  378  history
+  379  sudo ./dial-number /hfp/org/bluez/hci0/dev_94_65_2D_84_61_99 "+61459868975"
+  380  make uninstall
+  381  make remove
+  382  sudo apt-get uninstall ofono
+  383  sudo apt-get remove ofono
+  384  sudo ./dial-number /hfp/org/bluez/hci0/dev_94_65_2D_84_61_99 "+61459868975"
+  385  sudo apt-get purge ofono
+  386  sudo apt-get install ofono
+  387  sudo ./dial-number /hfp/org/bluez/hci0/dev_94_65_2D_84_61_99 "+61459868975"
+  388  sudo reboot
+  389  sudo bluetoothctl 
+  390  cd indiana-phone/
+  391  python3 app.py 
+  392  ls
+  393  ls -l
+  394  git init
+  395  ls
+  396  find / -name .gitignore
+  397  find ../ -name .gitignore
+  398  ls -la
+  399  touch app.py .gitignore README.md requirements.txt
+  400  tree
+  401  tree -e env
+  402  pip freeze
+  403  source env/bin/activate
+  404  pip freeze
+  405  pip freeze > requirements.txt 
+  406  ls
+  407  cd ..
+  408  mkdir repo
+  409  cd repo/
+  410  git clone https://github.com/ejojmjn/indiana-phone.git
+  411  cp ../indiana-phone/app.py indiana-phone/
+  412  cp ../indiana-phone/.gitignore indiana-phone/
+  413  cp ../indiana-phone/README.md indiana-phone/
+  414  cd indiana-phone/
+  415  ls
+  416  git status
+  417  git add .gitignore README.md app.py 
+  418  git commit "added .gitignore, README.md, app.py"
+  419  git commit -am "added .gitignore, README.md, app.py"
+  420  git config --global user.email "mikaoj@gmail.com"
+  421  git config --global user.name "Joakim Johansson"
+  422  git commit -am "added .gitignore, README.md, app.py"
+  423  git status
+  424  git push
+  425  ls
+  426  python3 -m venv env
+  427  cp ../../indiana-phone/requirements.txt .
+  428  git add requirements.txt 
+  429  git commit -am "added requirements.txt"
+  430  pip install -r requirements.txt 
+  431  source env/bin/activate
+  432  pip install -r requirements.txt
+  433  ls
+  434  cat app.py 
+  435  python3 app.py 
+  436  git status
+  437  git push
+  438  ls
+  439  cat > README.md 
+  440  git status
+  441  git commit -am "updated README.md"
+  442  git push
+  443  exit
+  444  ls
+  445  ls -latr
+  446  ls
+  447  mkdir indiana-phone
+  448  ls
+  449  cd indiana-phone/
+  450  ls
+  451  python3 -m venv env
+  452  ls
+  453  source env
+  454  cd .,.
+  455  cd env/
+  456  ls
+  457  cd ..
+  458  ls
+  459  c env/
+  460  cd env/
+  461  ls
+  462  cat pyvenv.cfg 
+  463  ls
+  464  cd ..
+  465  ls
+  466  cd ..
+  467  cd robocallz/
+  468  ls
+  469  source env/bin/activate
+  470  ls
+  471  pip freeze
+  472  cd ..
+  473  cd indiana-phone/
+  474  source env/bin/activate
+  475  ls
+  476  pip install pydbus
+  477  pip install pygobject pycairo
+  478  pip install flask
+  479  cat > .gitignore 
+  480  ls
+  481  vi app.py
+  482  devices
+  483  python3
+  484  cat app.py  
+  485  python3
+  486  exit
+  487  cd indiana-phone/
+  488  source env/bin/activate
+  489  python3 
+  490  python3 
+  491  python3 
+  492  python3 
+  493  ofono.onPropertyChanged = print
+  494  ofono.onCallAdded = print
+  495  ofono.onCallRemoved = print
+  496  python3 
+  497  python3 
+  498  cd indiana-
+  499  cd indiana-phone/
+  500  ls
+  501  source env/bin/activate
+  502  grep lambda *
+  503  grep lambda app.py 
+  504  from gi.repository import GLib
+  505  from pydbus import SystemBus
+  506  bus = SystemBus()
+  507  ofono = bus.get('org.ofono', "/hfp/org/bluez/hci0/dev_94_65_2D_84_61_99")
+  508  jprint1 = lambda c : print('hello1')
+  509  jprint2 = lambda c : print('hello2')
+  510  jprint3 = lambda c : print('hello3')
+  511  ofono.onPropertyChanged = jprint1
+  512  ofono.onCallAdded = jprint2
+  513  ofono.onCallRemoved = jprint3
+  514  loop = GLib.MainLoop()
+  515  loop.run()
+  516  python3
+  517  python3 
+  518  from gi.repository import GLib
+  519  from pydbus import SystemBus
+  520  bus = SystemBus()
+  521  ofono = bus.get('org.ofono', "/")
+  522  modem = bus.get('org.ofono', "/hfp/org/bluez/hci0/dev_94_65_2D_84_61_99")
+  523  def cb_handle_propery_change(*args):
+  524  def cb_handle_call_propery_change(*args):
+  525  def cb_handle_call_added(*args):
+  526  def cb_handle_call_removed(*args):
+  527  def cb_handle_modem_added(*args):
+  528  def cb_handle_modem_removed(*args):
+  529  ofono.onModemAdded = cb_handle_modem_added
+  530  ofono.onModemRemoved = cb_handle_modem_removed
+  531  modem.onCallAdded = cb_handle_call_added
+  532  modem.onCallRemoved = cb_handle_call_removed
+  533  modem.onPropertyChanged = cb_handle_propery_change
+  534  loop = GLib.MainLoop()
+  535  loop.run()
+  536  python3
+  537  cd indiana-phone/
+  538  ls
+  539  source env/bin/activate
+  540  from gi.repository import GLib
+  541  from pydbus import SystemBus
+  542  bus = SystemBus()
+  543  ofono = bus.get('org.ofono', "/")
+  544  modem = bus.get('org.ofono', "/hfp/org/bluez/hci0/dev_94_65_2D_84_61_99")
+  545  def cb_handle_propery_change(*args):
+  546  def cb_handle_call_propery_change(*args):
+  547  def cb_handle_call_added(*args):
+  548  def cb_handle_call_removed(*args):
+  549  def cb_handle_modem_added(*args):
+  550  def cb_handle_modem_removed(*args):
+  551  ofono.onModemAdded = cb_handle_modem_added
+  552  ofono.onModemRemoved = cb_handle_modem_removed
+  553  modem.onCallAdded = cb_handle_call_added
+  554  modem.onCallRemoved = cb_handle_call_removed
+  555  modem.onPropertyChanged = cb_handle_propery_change
+  556  loop = GLib.MainLoop()
+  557  python3
+  558  cd ofono-1.24/test
+  559  ./monitor-ofono 
+  560  cat monitor-ofono 
+  561  ./monitor-ofono 
+  562  ./dial-number /hfp/org/bluez/hci0/dev_94_65_2D_84_61_99 +61459868975
+  563  ./hangup-call /hfp/org/bluez/hci0/dev_94_65_2D_84_61_99/voicecall01
+  564  ./dial-number /hfp/org/bluez/hci0/dev_94_65_2D_84_61_99 +61459868975
+  565  ./hangup-call /hfp/org/bluez/hci0/dev_94_65_2D_84_61_99/voicecall01
+  566  ./dial-number /hfp/org/bluez/hci0/dev_94_65_2D_84_61_99 +61459868975
+  567  ./hangup-call /hfp/org/bluez/hci0/dev_94_65_2D_84_61_99/voicecall01
+  568  ./dial-number /hfp/org/bluez/hci0/dev_94_65_2D_84_61_99 +61459868975
+  569  ./hangup-call /hfp/org/bluez/hci0/dev_94_65_2D_84_61_99/voicecall01
+  570  ./dial-number /hfp/org/bluez/hci0/dev_94_65_2D_84_61_99 +61459868975
+  571  sudo systemct restart ofono
+  572  sudo systemctl restart ofono
+  573  ./dial-number /hfp/org/bluez/hci0/dev_94_65_2D_84_61_99 +61459868975
+  574  sudo systemctl ofono restart
+  575  sudo systemctl restart ofono
+  576  ./dial-number /hfp/org/bluez/hci0/dev_94_65_2D_84_61_99 +61459868975
+  577  bluetoothctl devices
+  578  d-feet 
+  579  cd ofono-1.24/
+  580  cd test/
+  581  history | grep dia
+  582  sudo ./dial-number /hfp/org/bluez/hci0/dev_94_65_2D_84_61_99 "+61459868975"
+  583  sudo -s
+  584  ls
+  585  cd ofo
+  586  cd
+  587  cd ofono-1.24/test/
+  588  ls
+  589  cat list-modems 
+  590  cat dial-number 
+  591  cat ../../robocallz/env/bin/RoboCallz.py 
+  592  ls
+  593  ls -latr
+  594  cd ..
+  595  ls
+  596  ls -latr
+  597  cd ..
+  598  ls
+  599  ls -latr
+  600  re robocallz/
+  601  ls
+  602  cd robocallz/
+  603  ls -latr
+  604  cat tobeinstalled.txt 
+  605  sudo apt-cache search python-gi
+  606  sudo apt-cache search libgirepository1.0-dev
+  607  fg
+  608  jobs
+  609  ls
+  610  cd ..
+  611  ls
+  612  cd ofono-1.24/
+  613  ls
+  614  cd test
+  615  ls
+  616  cat monitor-ofono 
+  617  cd ,,
+  618  cd ..
+  619  cd cd
+  620  cd 
+  621  cd indiana-tooth/
+  622  ls
+  623  source env/bin/activate
+  624  vi monitor.py
+  625  cat ../indiana-phone/app.py 
+  626  vi monitor.py
+  627  python3 monitor.py 
+  628  vi monitor.py
+  629  pip install pydbus
+  630  python3 monitor.py 
+  631  cat ../indiana-phone/requirements.txt 
+  632  pip install pydbus pycairo
+  633  python3 monitor.py 
+  634  pip install pydbus pycairo pygobject
+  635  python3 monitor.py 
+  636  vi monitor.py
+  637  python3 monitor.py 
+  638  vi monitor.py
+  639  python3 monitor.py 
+  640  vi monitor.py
+  641  python3 monitor.py 
+  642  cat monitor.py 
+  643  cd ..
+  644  cd indiana-phone/
+  645  source env/bin/activate
+  646  python3 app.py 
+  647  sudo systemctl restart ofono
+  648  python3 app.py 
+  649  cat ../ofono-1.24/test/monitor-ofono 
+  650  ls
+  651  mkdir indiana-tooth
+  652  cd indiana-tooth/
+  653  cp ../indiana-phone/.gitignore .
+  654  python3 -m venv env
+  655  source env/bin/activate
+  656  pip install flask-socketio
+  657  cat > app.py
+  658  vi app.py 
+  659  cat ../indiana-phone/app.py 
+  660  cat app.py 
+  661  vi app.py 
+  662  python3 app.py 
+  663  vi app.py 
+  664  cat ../indiana-phone/app.py 
+  665  vi app.py 
+  666  python3 app.py 
+  667  cat app.py 
+  668  python3 app.py 
+  669  vi app.py 
+  670  python3 app.py 
+  671  vi app.py 
+  672  python3 app.py 
+  673  vi app.py 
+  674  python3 app.py [A
+  675  python3 app.py 
+  676  vi app.py 
+  677  python3 app.py 
+  678  vi app.py 
+  679  python3 app.py 
+  680  vi app.py 
+  681  python3 app.py 
+  682  cat app.py 
+  683  python3 app.py 
+  684  cat ../ofono-1.24/test/monitor-ofono 
+  685  grep connect ../ofono-1.24/test/*
+  686  cat ../ofono-1.24/test/set-call-forwarding
+  687  ls
+  688  vi monitor.py 
+  689  ls
+  690  cd ..
+  691  cd indiana-phone/
+  692  ls
+  693  cp ../indiana-tooth/app.py ./websockets.py
+  694  cat websockets.py 
+  695  python3 websockets.py 
+  696  ls
+  697  cat websockets.py 
+  698  python3 websockets.py 
+  699  pip install gevent gevent-websocket
+  700  python3 websockets.py 
+  701  source env/bin/activate
+  702  python3 websockets.py 
+  703  pip install gevent gevent-websocket flask_socketio
+  704  python3 websockets.py 
+  705  ps
+  706  netstat -an | grep 5001
+  707  python3 websockets.py 
+  708  pip install --upgrade gevent gevent-websocket flask_socketio
+  709  python3 websockets.py 
+  710  bg
+  711  netstat -an | grep 500
+  712  python3 websockets.py 
+  713  netstat -an | grep 
+  714  python3 websockets.py 
+  715  netstat -an | grep 500
+  716  python3 websockets.py 
+  717  ython3 websockets.py 
+  718  python3 websockets.py 
+  719  kill %2
+  720  python3 websockets.py 
+  721  kill %3
+  722  python3 websockets.py 
+  723  kill %4
+  724  python3 websockets.py 
+  725  kill %2
+  726  ls
+  727  cat websockets.py 
+  728  python3 websockets.py 
+  729  kill %2
+  730  python3 websockets.py 
+  731  git status
+  732  ls
+  733  ca
+  734  python3 websockets.py 
+  735  pip freeze > requirements-websocket.txt
+  736  ls
+  737  git status
+  738  cd ..
+  739  ls
+  740  cd repo/
+  741  ls
+  742  cd indiana-phone/
+  743  git status
+  744  ls
+  745  diff app.py ../../indiana-phone/app.py 
+  746  diff app.py ../../indiana-phone/requirements.txt 
+  747  git status
+  748  cp ../../indiana-phone/requirements-websocket.txt .
+  749  cp ../../indiana-phone/websockets.py .
+  750  ls -latr
+  751  git status
+  752  git add requirements-websocket.txt websockets.py 
+  753  git status
+  754  git commit -am "added websockets.py"
+  755  git push 
+  756  git diff
+  757  git pull
+  758  cat README.md 
+  759  git status
+  760  git push
+  761  ls
+  762  pip install -r requirements-websocket.txt 
+  763  ls
+  764  python3 websockets.py 
+  765  cp ../../indiana-phone/websockets.py .
+  766  python3 websockets.py 
+  767  cp ../../indiana-phone/websockets.py .
+  768  python3 websockets.py 
+  769  git status
+  770  git commit -am "added clear button"
+  771  git push
+  772  python3 websockets.py 
+  773  git commit -am "fixed source for calls"
+  774  git push
+  775  cp ../../indiana-phone/websockets.py .
+  776  git commit -am "fixed source for calls"
+  777  git push
+  778  python3 websockets.py 
+  779  cp ../../indiana-phone/websockets.py .
+  780  python3 websockets.py 
+  781  more websockets.py 
+  782  python3 websockets.py 
+  783  pip install gevent-websocket
+  784  python3 websockets.py 
+  785  cp ../../indiana-phone/websockets.py .
+  786  python3 websockets.py 
+  787  kill %2
+  788  cp ../../indiana-phone/websockets.py .
+  789  python3 websockets.py 
+  790  cp ../../indiana-phone/websockets.py .
+  791  python3 websockets.py 
+  792  kill %2
+  793  cp ../../indiana-phone/websockets.py .
+  794  python3 websockets.py 
+  795  pip install eventlet
+  796  python3 websockets.py 
+  797  kill%2
+  798  kill %2
+  799  cp ../../indiana-phone/websockets.py .
+  800  python3 websockets.py 
+  801  bg
+  802  kill%2
+  803  pip remove eventlet
+  804  pip delete eventlet
+  805  pip uninstall eventlet
+  806  python3 websockets.py 
+  807  cp ../../indiana-phone/websockets.py .
+  808  python3 websockets.py 
+  809  ps -elf
+  810  ps -elf | grep python
+  811  kill 3063  19067
+  812  python3 websockets.py 
+  813  cp ../../indiana-phone/websockets.py .
+  814  python3 websockets.py 
+  815  cp ../../indiana-phone/websockets.py .
+  816  python3 websockets.py 
+  817  kill %1
+  818  ps -elf | grep python
+  819  python3 websockets.py 
+  820  kill %1
+  821  cp ../../indiana-phone/websockets.py .
+  822  python3 websockets.py 
+  823  ps -elf | grep python
+  824  kill 19609
+  825  python3 websockets.py 
+  826  kill %1
+  827  python3 websockets.py 
+  828  kill %3
+  829  cp ../../indiana-phone/websockets.py .
+  830  python3 websockets.py 
+  831  cp ../../indiana-phone/websockets.py .
+  832  python3 websockets.py 
+  833  cp ../../indiana-phone/websockets.py .
+  834  python3 websockets.py 
+  835  cp ../../indiana-phone/websockets.py .
+  836  python3 websockets.py 
+  837  ps -elf | grep pythong
+  838  ps -elf | grep python
+  839  kill 19618
+  840  python3 websockets.py 
+  841  ps -elf | grep python
+  842  kill  19618
+  843  cp ../../indiana-phone/websockets.py .
+  844  python3 websockets.py 
+  845  kill %3
+  846  sudo vi /etc/network/interfaces
+  847  top
+  848  free -h
+  849  cd indiana-phone/
+  850  ls
+  851  source env/bin/activate
+  852  python3
+  853  ls
+  854  ls -latr
+  855  bluetoothctl 
+  856  systemctl restart bluetooth
+  857  sudo systemctl restart bluetooth
+  858  bluetoothctl 
+  859  sudo -s
+  860  cd repo/indiana-phone///
+  861  ls
+  862  ls -latr
+  863  ls
+  864  cp websockets.py websockets2.py
+  865  cat ../../indiana-phone/websockets.py 
+  866  python3 websockets2.py 
+  867  grep socket requirements*
+  868  python3 websockets2.py 
+  869  pip install flask_socketio
+  870  exit
+  871  sudo ofono -v
+  872  sudo ofonod -v
+  873  sudo apt install ofono
+  874  sudo -s
+  875  ls
+  876  sudo -s
+  877  ls
+  878  sudo -s
+  879  cd ofono-1.24/test/
+  880  history | dial
+  881  history | grep dial
+  882  ./dial-number /hfp/org/bluez/hci0/dev_94_65_2D_84_61_99 "+61459868975"
+  883  sudo ./dial-number /hfp/org/bluez/hci0/dev_94_65_2D_84_61_99 "+61459868975"
+  884  sudo systemctl restart ofono
+  885  sudo ./dial-number /hfp/org/bluez/hci0/dev_94_65_2D_84_61_99 "+61459868975"
+  886  sudo systemctl restart bluetooth
+  887  sudo -s
+  888  cd ofono-1.24/test/
+  889  ./monitor-ofono 
+  890  sudo ./monitor-ofono 
+  891  sudo -s
+  892  cd ofono-1.24/test/
+  893  ./monitor-ofono 
+  894  bluetoothctl 
+  895  docker run hello-world
+  896  docker pull alexellis2/go-armhf
+  897  docker pull alexellis2/go-armhf:1.7.4
+  898  cd repo/indiana-phone/
+  899  git checkout -b experimental
+  900  git status
+  901  git add websockets*.py
+  902  git push origin experimental
+  903  git status
+  904  git commit -am "minddump"
+  905  git push origin experimental
+  906  git status
+  907  docker images
+  908  docker run --rm alexellis2/go-armhf 
+  909  docker run --rm ee19d69752da
+  910  docker run --rm ee19d69752da go
+  911  cd
+  912  vi .bashrc 
+  913  vi .bash_aliases
+  914  exit
+  915  curl -sSLO https://storage.googleapis.com/golang/go1.7.5.linux-armv6l.tar.gz
+  916  curl -fsSL get.docker.com -o get-docker.sh && sh get-docker.sh
+  917  sudo groupadd docker
+  918  sudo usermod -aG docker pi
+  919  newgrp docker
+  920  exit
+  921  go
+  922  mkdir gogo
+  923  cd gogo/
+  924  cat > config.json
+  925  git clone https://github.com/BinaryCraX/dbus-mqtt-bridge
+  926  mv config.json dbus-mqtt-bridge/
+  927  cd dbus-mqtt-bridge/
+  928  go main.go 
+  929  go run main.go 
+  930  wget https://storage.googleapis.com/golang/go1.9.linux-armv6l.tar.gz
+  931  sudo tar -C /usr/local -xzf go1.8.3.linux-armv6l.tar.gz
+  932  sudo tar -C /usr/local -zxf go1.9.linux-armv6l.tar.gz 
+  933  $ export PATH=$PATH:/usr/local/go/bin
+  934  export PATH=$PATH:/usr/local/go/bin
+  935  vi ~/.bash_aliases 
+  936  sudo vi /etc/profile
+  937  exit
+  938  cd gogo
+  939  ls
+  940  cd dbus-mqtt-bridged
+  941  cd dbus-mqtt-bridge/
+  942  l;s
+  943  ls
+  944  mkdir test
+  945  cp config.json test/
+  946  cp main.go test/
+  947  cd test
+  948  docker build -t test .
+  949  sudo systemctl status ofono
+  950  sudo journalctl 
+  951  sudo journalctl | grep ofono
+  952  sudo journalctl 
+  953  sudo apt-get install pulseaudio-module-bluetooth
+  954  sudo systemctl status pulseaudio
+  955  sudo pulseaudo --start
+  956  sudo pulseaudio --start
+  957  pulseaudio --start
+  958  ps -elf | grep pulse
+  959  kill 1453
+  960  sudo kill 1453
+  961  cd ofono-1.24/
+  962  ls
+  963  cd test/
+  964  history | grep dial
+  965  sudo ./dial-number /hfp/org/bluez/hci0/dev_94_65_2D_84_61_99 "+61459868975"
+  966  cd 
+  967  din
+  968  cd repo/
+  969  cd indiana-phone/
+  970  ls
+  971  source env/bin/activate
+  972  python3 websockets-sortaok.py 
+  973  sudo systemctl restart bluetooth
+  974  bluetoothctl 
+  975  cd gogo
+  976  ls
+  977  cd dbus-mqtt-bridge/
+  978  ls
+  979  cd test/
+  980  ls
+  981  go build main.go 
+  982  go get git.eclipse.org/gitroot/paho/org.eclipse.paho.mqtt.golang.git
+  983  cd ofono-1.24/
+  984  ls
+  985  cd test/
+  986  ./monitor-ofono 
+  987  ls -latr
+  988  mosquitto -h
+  989  service mosquitto status
+  990  users
+  991  cat /etc/mosquitto/mosquitto.conf
+  992  los
+  993  mkdir mqtt
+  994  cd mqtt/
+  995  python3 -m venv env
+  996  cd .
+  997  cd ..
+  998  cd
+  999  cd repo/
+ 1000  ls
+ 1001  cd indiana-phone/
+ 1002  ls
+ 1003  source env/bin/
+ 1004  source env/bin/activate
+ 1005  pip install pygobject
+ 1006  pip show pygobject
+ 1007  cat websockets-sortaok.py 
+ 1008  cd
+ 1009  cd en
+ 1010  ls
+ 1011  exit
+ 1012  ks
+ 1013  ls
+ 1014  cd mqtt/
+ 1015  ls
+ 1016  source env/bin/activate
+ 1017  pip install pydbus
+ 1018  cat ../repo/indiana-phone/requirements-websocket.txt 
+ 1019  cat ../repo/indiana-phone/requirements.txt 
+ 1020  pip install pydbus PyGObject
+ 1021  python3 test.py 
+ 1022  cat ../repo/indiana-phone/websockets-sortaok.py 
+ 1023  cd /repo/indiana-phone/
+ 1024  cd ../repo/indiana-phone/
+ 1025  ls
+ 1026  vi websockets-sortaok.py 
+ 1027  source env/bin/activate
+ 1028  python3 websockets-sortaok.py 
+ 1029  vi websockets-sortaok.py 
+ 1030  python3 websockets-sortaok.py 
+ 1031  vi websockets-sortaok.py 
+ 1032  python3 websockets-sortaok.py 
+ 1033  vi websockets-sortaok.py 
+ 1034  python3 websockets-sortaok.py 
+ 1035  vi websockets-sortaok.py 
+ 1036  python3 websockets-sortaok.py 
+ 1037  vi websockets-sortaok.py 
+ 1038  python3 websockets-sortaok.py 
+ 1039  i websockets-sortaok.py 
+ 1040  python3 websockets-sortaok.py 
+ 1041  git status
+ 1042  git commit -am "made a phone"
+ 1043  git push origin experimental
+ 1044  cd repo/indiana-phone/
+ 1045  source env/bin/activate
+ 1046  python3 
+ 1047  cd json
+ 1048  cd repo/
+ 1049  ls
+ 1050  cd indiana-phone/
+ 1051  ls
+ 1052  grep json *
+ 1053  ls
+ 1054  cat app.py
+ 1055  ls
+ 1056  ls -latr
+ 1057  cp websockets-webphone.py monitor.py
+ 1058  cd
+ 1059  cd /tmp
+ 1060  git clone https://github.com/ejojmjn/indiana-phone.git
+ 1061  ls
+ 1062  cd indiana-phone/
+ 1063  ls
+ 1064  git checkout experimental
+ 1065  ls
+ 1066  d-feet 
+ 1067  ls -latr
+ 1068  cd repo/
+ 1069  ls
+ 1070  cd indiana-phone/
+ 1071  ls
+ 1072  ls -latr
+ 1073  more websockets-sortaok.py 
+ 1074  cp websockets-sortaok.py websockets-webphone.py
+ 1075  source env/bin/activate
+ 1076  ls
+ 1077  python3 websockets-webphone.py 
+ 1078  ls
+ 1079  python3 websockets-webphone.py 
+ 1080  python3 monitor.py 
+ 1081  git status
+ 1082  git add monitor.py websockets-webphone.py
+ 1083  git status
+ 1084  git commit -am "added monitor and webphone"
+ 1085  git push
+ 1086  git push origin experimental
+ 1087  bluetoothctl 
+ 1088  pwd
+ 1089  ls
+ 1090  sudo -s
+ 1091  ls
+ 1092  history
+ 1093  git clone https://github.com/ejojmjn/indiana-phones.git
+ 1094  cd indiana-phones/ansible/
+ 1095  ls
+ 1096  more main.yml 
+ 1097  ls -latr
+ 1098  cd ..
+ 1099  ls
+ 1100  cd ansible/
+ 1101  ls
+ 1102  ls -latr
+ 1103  ls
+ 1104  cp main.yml network.yml
+ 1105  cp main.yml mqtt.yaml
+ 1106  cp main.yml dashboard.yml
+ 1107  wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+ 1108  sudo apt-get install apt-transport-https
+ 1109  echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee 
+ 1110  echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+ 1111  sudo apt-get update
+ 1112  sudo apt-get install sublime-text
+ 1113  sudo apt-get install sublime-text 
+ 1114  sudo cat sudo tee /etc/apt/sources.list.d/sublime-text.list
+ 1115  sudo nano /etc/apt/sources.list.d/sublime-text.list
+ 1116  sudo apt-get update
+ 1117  sudo apt-get install sublime-text 
+ 1118  sudo apt-cache search sublime-text 
+ 1119  sudo apt-cache search sublime
+ 1120  . <( wget -O - https://code.headmelted.com/installers/apt.sh )
+ 1121  sudo . <( wget -O - https://code.headmelted.com/installers/apt.sh )
+ 1122  sudo -s
+ 1123  hisotyr
+ 1124  history
+ 1125  wget -q0 - https://packagecloud.io/headmelted/codebuilds/gpgkey | sudo apt-key add -
+ 1126  wget -qO - https://packagecloud.io/headmelted/codebuilds/gpgkey | sudo apt-key add -
+ 1127  uysod-
+ 1128  sudo -s
+ 1129  ls
+ 1130  d  indiana-
+ 1131  cd indiana-phones/
+ 1132  ls
+ 1133  cd ansible/
+ 1134  ls
+ 1135  code-oss dashboard.yml
+ 1136  pip install ansible
+ 1137  ls -latr
+ 1138  cd
+ 1139  ls
+ 1140  sudo apt-get install dnsmasq hostapd
+ 1141  sudo systemctl stop dnsmasq
+ 1142  sudo systemctl stop hostapd
+ 1143  sudo nano /etc/dhcpcd.conf 
+ 1144  sudo service dhcpd restart
+ 1145  sudo service dhcpcd restart
+ 1146  ip addr
+ 1147  sudo mv /etc/dnsmasq.conf /etc/dnsmasq.conf.orig
+ 1148  sudo nano /etc/dnsmasq.conf.orig 
+ 1149  sudo nano /etc/dnsmasq.conf
+ 1150  sudo nano /etc//hostapd/hostapd.conf
+ 1151  sudo nano /etc/default/hostapd 
+ 1152  sudo nano /etc/default/hostapd sudo systemctl start hostapd
+ 1153  sudo systemctl start hostapd
+ 1154  sudo systemctl start dnsmasq
+ 1155  sudo -s
+ 1156  nano landingpage.py
+ 1157  sudo -s
+ 1158  cd indiana-phones/
+ 1159  history
+ 1160  ls
+ 1161  sudo -E FLAS_APP=app.py flask run
+ 1162  sudo -E FLASK_APP=app.py flask run
+ 1163  [A
+ 1164  sudo -E FLASK_APP=app.py flask run
+ 1165  sudo -E FLASK_APP=app.py flask run --host=0.0.0.0
+ 1166  ls
+ 1167  cd indiana-phones/
+ 1168  ls
+ 1169  nano app.py .
+ 1170  nano app.py 
+ 1171  nano templates/wifi.html 
+ 1172  nano app.py 
+ 1173  nano templates/wifi.html 
+ 1174  nano app.py 
+ 1175  nano templates/wifi.html 
+ 1176  nano app.py 
+ 1177  nano templates/wifi.html 
+ 1178  nano app.py 
+ 1179  nano templates/wifi.html 
+ 1180  nano app.py 
+ 1181  nano templates/wifi.html 
+ 1182  nano app.py 
+ 1183  fg %1
+ 1184  nano templates/wifi.html 
+ 1185  nano app.py 
+ 1186  nano templates/wifi.html 
+ 1187  nano app.py 
+ 1188  ls
+ 1189  ls -latr
+ 1190  ls
+ 1191  git add templates
+ 1192  gits tatus
+ 1193  git status
+ 1194  git add app.py 
+ 1195  git add ansible/
+ 1196  git add ansible/dashboard.yml 
+ 1197  git add ansible/mqtt.yaml 
+ 1198  git add ansible/network.yml 
+ 1199  git status
+ 1200  pwd
+ 1201  ls -latr
+ 1202  ls
+ 1203  cd ansible/
+ 1204  ls
+ 1205  nano dashboard.yml 
+ 1206  ansible-playbook dashboard.yml 
+ 1207  nano dashboard.yml 
+ 1208  ansible-playbook dashboard.yml 
+ 1209  nano dashboard.yml 
+ 1210  y
+ 1211  ansible-playbook dashboard.yml 
+ 1212  nano dashboard.yml 
+ 1213  more main.yml 
+ 1214  nano dashboard.yml 
+ 1215  ansible-playbook dashboard.yml 
+ 1216  sudo -s
+ 1217  vi dashboard.yml 
+ 1218  nano dashboard.yml 
+ 1219  ansible-playbook dashboard.yml 
+ 1220  nano dashboard.yml 
+ 1221  ansible-playbook dashboard.yml 
+ 1222  nano dashboard.yml 
+ 1223  ansible-playbook dashboard.yml 
+ 1224  nano dashboard.yml 
+ 1225  ansible-playbook -vv dashboard.yml 
+ 1226  git status
+ 1227  git commit -am "added"
+ 1228  git push
+ 1229  ls
+ 1230  ls -latr
+ 1231  cd indiana-phones/
+ 1232  ls
+ 1233  pwd
+ 1234  cd ansible/
+ 1235  ls
+ 1236  cd indiana-phones
+ 1237  ls
+ 1238  git status
+ 1239  rm ansible/influxdb-1.7.1_linux_armhf.tar.gz 
+ 1240  git pull
+ 1241  cd ansible/
+ 1242  ansible-playbook adb.yml 
+ 1243  sudo apt-get install --no-install-recommends python-apt -y -q
+ 1244  sudo apt --fix-broken install
+ 1245  ansible-playbook adb.yml 
+ 1246  ansible-playbook -vv adb.yml 
+ 1247  cd
+ 1248  ls
+ 1249  adb devices
+ 1250  pyadb devices
+ 1251  pyadb shell ls
+ 1252  ls
+ 1253  grep -R *adb* *
+ 1254  cd 
+ 1255  ls
+ 1256  cd indiana-phone
+ 1257  ls
+ 1258  git status 
+ 1259  cd ..
+ 1260  mv indiana-phone indiana-phone-old
+ 1261  git clone http://github.com/ejojmjn/indiana-phone.git
+ 1262  ls
+ 1263  cd indiana-phone
+ 1264  ls
+ 1265  python3 main.py 
+ 1266  git status
+ 1267  git commit "shell commands"
+ 1268  git commit -am "shell commands"
+ 1269  ls
+ 1270  more README.md 
+ 1271  cat >> ADB-API.txt
+ 1272  git add ADB-API.txt 
+ 1273  git commit -am "dumped info in ADB-API"
+ 1274  git push
+ 1275  python3 main.py 
+ 1276  ls
+ 1277  cat > profile.yaml
+ 1278  cat > profile.json
+ 1279  python3 main.py 
+ 1280  pip install yaml
+ 1281  pip3 install pyaml
+ 1282  pip3 install pyyaml
+ 1283  python3 main.py 
+ 1284  python3
+ 1285  python3 main.py 
+ 1286  git status
+ 1287  git add profile.yaml profile.json 
+ 1288  git commit -am "basic profile"
+ 1289  git push
+ 1290  ip addr
+ 1291  ls
+ 1292  lsw
+ 1293  history \ grep git
+ 1294  history | grep git
+ 1295  git clone http://github.com/ejojmjn/indiana-bluez.git
+ 1296  cd indiana-bluez/
+ 1297  ls
+ 1298  python3 bluetooth.py 
+ 1299  more bluetooth.py 
+ 1300  python3
+ 1301  sudo -s
+ 1302  python3
+ 1303  python3 bluetooth.py 
+ 1304  sudo vi /etc/machine-info
+ 1305  sudo service bluetooth restart
+ 1306  python3 bluetooth.py 
+ 1307  sudo service bluetooth stop
+ 1308  sudo service bluetooth start
+ 1309  python3 bluetooth.py 
+ 1310  sudo vi /etc/machine-info
+ 1311  sudo reboot
+ 1312  sudo -s
+ 1313  kip addr
+ 1314  ip addr
+ 1315  sudo -s
+ 1316  history | grep ansible
+ 1317  ls
+ 1318  ip addr
+ 1319  ls -latr
+ 1320  top
+ 1321  sudo apt-get install maas
+ 1322  sudo apt-get update
+ 1323  sudo apt-get install mass
+ 1324  sudo apt-get install maas
+ 1325  sudo apt-cache search maas
+ 1326  raspi-config 
+ 1327  sudo raspi-config 
+ 1328  history
+ 1329  history | more
+ 1330  history > history.txt
